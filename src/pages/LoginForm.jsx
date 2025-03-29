@@ -19,7 +19,8 @@ import {
 const LoginForm = () => {
   const dispatch = useDispatch();
   const persist = useSelector((state) => state.user.persist);
-  const backend = useSelector((state) => state.user.backend);
+  // const backend = useSelector((state) => state.user.backend);
+  const backend = "http://localhost:3500";
 
   const navigate = useNavigate();
   const location = useLocation();

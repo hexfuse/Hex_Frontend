@@ -13,8 +13,8 @@ import {
 const useSocketConnect = () => {
   const dispatch = useDispatch();
   const accessToken = useSelector((state) => state.user.accessToken);
-  // const backend = useSelector((state) => state.user.backend);
-  const backend = "http://localhost:3500";
+  const backend = useSelector((state) => state.user.backend);
+  // const backend = "http://localhost:3500";
 
   useEffect(() => {
     if (accessToken) {
